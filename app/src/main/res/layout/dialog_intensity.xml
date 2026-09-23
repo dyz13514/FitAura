@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+    
+    <!-- 当前强度显示 -->
+    <TextView
+        android:id="@+id/tv_current_intensity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="当前强度: 适中"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"/>
+    
+    <!-- 强度选择器 -->
+    <SeekBar
+        android:id="@+id/seekbar_intensity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="4"
+        android:progress="2"
+        android:layout_marginBottom="16dp"/>
+        
+    <!-- 强度描述 -->
+    <TextView
+        android:id="@+id/tv_intensity_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="适中"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="8dp"/>
+        
+    <!-- 强度说明 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请根据今天的实际感受选择训练强度，这将影响下次训练的计划安排。"
+        android:textSize="14sp"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout> 

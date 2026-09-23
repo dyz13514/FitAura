@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorStBlue">
+
+        <!-- Fitaura Logo -->
+        <ImageView
+            android:id="@+id/logo_image"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/barbell"
+            android:scaleType="fitCenter"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="100dp"/>
+
+        <!-- 欢迎文本 -->
+        <TextView
+            android:id="@+id/welcome_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="欢迎来到 Fitaura"
+            android:textSize="40sp"
+            android:textColor="#00BCD4"
+            app:layout_constraintTop_toBottomOf="@id/logo_image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="20dp"/>
+
+        <!-- 健身提示 -->
+        <TextView
+            android:id="@+id/fitness_tip_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="每天一点点，离目标更近一步！"
+            android:textSize="25sp"
+            android:textColor="#00BCD4"
+            app:layout_constraintTop_toBottomOf="@id/welcome_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="40dp"/>
+
+        <!-- 免责声明 -->
+
+        <!-- 立即开始按钮 -->
+
+        <TextView
+            android:id="@+id/disclaimer_text"
+            android:layout_width="342dp"
+            android:layout_height="91dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="32dp"
+            android:text="本APP提供的健身建议仅供参考，不能替代专业医疗诊断。"
+            android:textColor="#00BCD4"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fitness_tip_text" />
+
+        <Button
+            android:id="@+id/start_button"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="立即开始"
+            android:textSize="18sp"
+            android:backgroundTint="#00BCD4"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="50dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

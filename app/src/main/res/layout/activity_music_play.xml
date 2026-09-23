@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dyzapplication.MusicPlayActivity">
+
+    <TextView
+        android:id="@+id/musicPlay_musicName"
+        android:layout_width="204dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="104dp"
+        android:gravity="center"
+        android:text="曲目"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/musicPlay_pic"
+        android:layout_width="233dp"
+        android:layout_height="227dp"
+        android:layout_marginTop="46dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/musicPlay_musicName" />
+
+    <SeekBar
+        android:id="@+id/musicPlay_seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:max="100"
+        app:layout_constraintTop_toBottomOf="@+id/musicPlay_pic"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <ImageButton
+        android:id="@+id/musicPlay_play"
+        android:layout_width="123dp"
+        android:layout_height="127dp"
+        android:layout_marginTop="76dp"
+        android:src="@drawable/play"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/musicPlay_pic" />
+
+    <ImageButton
+        android:id="@+id/musicPlay_pause"
+        android:layout_width="123dp"
+        android:layout_height="127dp"
+        android:layout_marginTop="76dp"
+        android:src="@drawable/pause"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/musicPlay_pic" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

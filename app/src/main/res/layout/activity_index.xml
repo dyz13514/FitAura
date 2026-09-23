@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/userlogo"
+        android:layout_width="145dp"
+        android:layout_height="155dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:src="@drawable/head" />
+
+    <TextView
+        android:id="@+id/textname"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/userlogo"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="45dp"
+        android:text="姓名："
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editname"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/userlogo"
+        android:layout_marginTop="40dp"
+        android:layout_toRightOf="@id/textname"
+        android:layout_marginRight="40dp" />
+
+    <TextView
+        android:id="@+id/textage"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="年龄："
+        android:textSize="20sp"
+        android:layout_below="@id/textname"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp" />
+
+    <EditText
+        android:id="@+id/editage"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/editname"
+        android:layout_toRightOf="@id/textage"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textsex"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="性别："
+        android:textSize="20sp"
+        android:layout_below="@id/textage"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp" />
+
+    <RadioGroup
+        android:id="@+id/radiosex"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/editage"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/textsex"
+        android:layout_marginRight="40dp"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/idmale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="男"
+            android:textSize="20sp" />
+        <RadioButton
+            android:id="@+id/idfemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="女"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textbirth"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="生日："
+        android:textSize="20sp"
+        android:layout_below="@id/textsex"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp" />
+
+    <EditText
+        android:id="@+id/editbirth"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/radiosex"
+        android:layout_toRightOf="@id/textbirth"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="40dp"
+        android:focusable="false" />
+
+    <TextView
+        android:id="@+id/textheight"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="身高："
+        android:textSize="20sp"
+        android:layout_below="@id/textbirth"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp" />
+
+    <EditText
+        android:id="@+id/editheight"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/editbirth"
+        android:layout_toRightOf="@id/textheight"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="40dp"
+        android:inputType="numberDecimal"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:cursorVisible="false" />
+
+    <TextView
+        android:id="@+id/textweight"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="体重："
+        android:textSize="20sp"
+        android:layout_below="@id/textheight"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp" />
+
+    <EditText
+        android:id="@+id/editweight"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/editheight"
+        android:layout_toRightOf="@id/textweight"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="40dp"
+        android:inputType="numberDecimal"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:cursorVisible="false" />
+
+
+    <TextView
+        android:id="@+id/texthobby"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="健身目的："
+        android:textSize="20sp"
+        android:layout_below="@id/textweight"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp" />
+
+    <EditText
+        android:id="@+id/edithobby"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/editweight"
+        android:layout_toRightOf="@id/texthobby"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="40dp"
+        android:focusable="false" />
+
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确定"
+        android:textSize="20sp"
+        android:layout_below="@id/texthobby"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="80dp" />
+
+    <Button
+        android:id="@+id/button_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/texthobby"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="80dp"
+        android:text="清空"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/text_output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_below="@id/button_submit"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp" />
+</RelativeLayout>

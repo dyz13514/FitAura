@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FAFAFA"
+    tools:context=".SecondFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="训练指南"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginBottom="16dp" />
+
+    <!-- 今日训练提示 -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:background="#E3F2FD">
+
+            <TextView
+                android:id="@+id/tv_today_tips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="今日训练部位: 胸部\n优先查看相关训练内容"
+                android:textSize="14sp"
+                android:lineSpacingExtra="4dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- 身体部位选择按钮 -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_marginBottom="12dp">
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            
+            <Button
+                android:id="@+id/btn_shoulders"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="肩部"
+                android:textSize="12sp"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="#3F51B5" />
+                
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="背部"
+                android:textSize="12sp"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="#3F51B5" />
+                
+            <Button
+                android:id="@+id/btn_chest"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="胸部"
+                android:textSize="12sp"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="#3F51B5" />
+                
+            <Button
+                android:id="@+id/btn_legs"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="腿部"
+                android:textSize="12sp"
+                android:backgroundTint="#3F51B5" />
+        </LinearLayout>
+    </HorizontalScrollView>
+    
+    <!-- 文章标题 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="训练文章"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp" />
+        
+    <!-- 文章列表 -->
+    <ListView
+        android:id="@+id/list_articles"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp" />
+        
+    <!-- 视频标题 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="训练视频"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp" />
+        
+    <!-- 视频列表 -->
+    <GridView
+        android:id="@+id/list_videos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:numColumns="2"
+        android:verticalSpacing="8dp"
+        android:horizontalSpacing="8dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center"/>
+        
+    <!-- 查看动作指南按钮 -->
+    <Button
+        android:id="@+id/btn_exercise_guide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查看动作详细指南"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>
